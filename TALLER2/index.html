@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Ejemplo - Bootstrap 5</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>Mi Página</strong>
+        </a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-4 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Galería de fotos</h1>
+          <p class="lead text-muted">Elige una sección para ver más imágenes.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="./images/buho.png" class="card-img-top" id="buho" alt="Waterfall" />
+            <div class="card-body">
+              <h5 class="card-title">Búhos</h5>
+              <p class="card-text" id="buho-text">
+                ¿Sabías que... ? A un grupo de búhos se le llama "parlamento".
+              </p>
+              <a href="#!" class="btn btn-primary" onclick="cambiarFoto()">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img src="./images/atardecer.png" class="card-img-top"
+              alt="Sunset Over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title" id="nombre">Atardeceres</h5>
+              <p class="card-text">
+                Hermosos y dañinos a la vista.
+              </p>
+              <a href="#!" class="btn btn-primary" onclick="cambiarNombre()">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card" id="borrando">
+            <img src="./images/gato.png" id="gato-img" class="card-img-top"
+              alt="Sunset over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title" id="gato-text">Gatos</h5>
+              <p class="card-text" id="gato-info">
+                Los únicos animales que se domesticaron solos, probablemente.
+              </p>
+              <a href="#!" class="btn btn-primary" onclick="borrarGato()">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </main>
+
+
+  <div class="container">
+    <h5>Tarea Nº4</h5>
+    <p>Mostrar en terminal datos</p>
+    <hr>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+
+    <label for="nombre"><b>Nombre</b></label>
+    <input type="text" class="form-control" id="nombre-info" placeholder="nombre">
+
+    <label for="ciudad"><b>Elige tu ciudad</b></label>
+    <select name="ciudad" class="form-control" id="ciudad">
+      <option value="Chile">Chile</option>
+      <option value="Perú">Perú</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Argentina">Argentina</option>
+    </select>
+    
+    <input type="checkbox" class="form-check-input" id="hombre" name="hombre" value="hombre">
+    <label for="hombre" class="form-check-label"> Soy hombre</label><br>
+    <input type="checkbox" class="form-check-input" id="mujer" name="mujer" value="mujer">
+    <label for="mujer" class="form-check-label"> Soy mujer</label><br>
+
+    <hr>
+    <a href="#!" class="btn btn-primary" onclick="imprimirDatos()">Registrar</a>
+  </div>
+  <div class="container info">
+  </div>
+
+
+
+  <footer class="bg-dark text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-light">Sobre nosotros</h5>
+          <p class="text-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem sodales, 
+            mollis nisl quis, mattis felis. Nulla aliquet ornare nisl sed consequat. Duis vehicula 
+            velit eu lacinia fringilla. Nullam rhoncus ultrices diam non accumsan. Cras a libero massa. 
+            Aenean eu efficitur dui. Nam mollis tristique dui suscipit vestibulum. Proin.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase  text-light">Agradecimientos</h5>
+
+          <p class="text-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem sodales, 
+            mollis nisl quis, mattis felis. Nulla aliquet ornare nisl sed consequat. Duis vehicula 
+            velit eu lacinia fringilla. Nullam rhoncus ultrices diam non accumsan. Cras a libero massa. 
+            Aenean eu efficitur dui. Nam mollis tristique dui suscipit vestibulum. Proin.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-light" href="https://www.ufro.cl">Ufro.cl</a>
+    </div>
+  </footer>
+<script src="./js/archivo.js"></script>
+</body>
+</html>
